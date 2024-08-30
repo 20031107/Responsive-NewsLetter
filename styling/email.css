@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+@font-face {
+    font-family:'Roboto' ;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(32, 32, 53);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 6px 9px rgb(66, 66, 90);
+    max-width: 100%;
+    opacity: 0.95;
+    align-items: center;
+    justify-content: space-between;
+}
+.stayupdated{
+    flex-basis: 50%;
+    padding-left: 20px;
+}
+h2{
+    font-size: 40px;
+}
+.image{
+    flex-basis: 30%;
+}
+img{
+    width: 300px;
+}
+.icons{
+    display: flex;
+}
+i{
+   margin-top: 17px;
+   color: #FF6155;
+   font-size: 14px;
+}
+
+.icons p{
+    margin-left: 10px;
+
+}
+label{
+    font-size: 11px;
+}
+input{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: 0;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.foremail.error input{
+    border-color: red;
+}
+small{
+    margin-left: 150px;
+    color: red;
+    font-size: 11px;
+}
+button{
+    height: 40px;
+    background: #0e0e29;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    color: white;
+}
+button:hover{
+    background:linear-gradient(rgb(233, 80, 19), #FF6155);
+    cursor: pointer;
+}
+form{
+    padding-bottom: 40px;
+}
+
+/* media queries */
+@media (min-width:325px) and (max-width:420px) {
+    .container{
+        display: flex;
+       flex-direction: column-reverse;
+    }
+    img{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .image{
+        margin-top: 11em;
+       
+    }
+    h2{
+        font-size: 50px;
+    }
+    input{
+        height: 50px;
+    }
+    button{
+        height: 50px;
+    }
+    a{
+        font-size: 20px;
+    }
+    
+}
